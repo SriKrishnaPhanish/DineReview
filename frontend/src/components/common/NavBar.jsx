@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function NavBar() {
   const navigate = useNavigate();
 
   const user = JSON.parse(localStorage.getItem("user"));
@@ -73,4 +73,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
 import api from "../services/api";
-import Navbar from "../components/common/Navbar";
+import NavBar from "../components/common/NavBar";
 import ReviewCard from "../components/reviews/ReviewCard";
 import ReviewForm from "../components/reviews/ReviewForm";
 
@@ -116,7 +116,7 @@ function RestaurantDetails() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-100">
-        <Navbar />
+        <NavBar />
 
         <div className="flex min-h-[70vh] items-center justify-center">
           <p className="text-gray-600">Loading restaurant...</p>
@@ -128,7 +128,7 @@ function RestaurantDetails() {
   if (error) {
     return (
       <div className="min-h-screen bg-gray-100">
-        <Navbar />
+        <NavBar />
 
         <main className="px-6 py-10">
           <div className="mx-auto max-w-4xl">
@@ -155,7 +155,7 @@ function RestaurantDetails() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <Navbar />
+      <NavBar />
 
       <main className="px-6 py-10">
         <div className="mx-auto max-w-4xl">

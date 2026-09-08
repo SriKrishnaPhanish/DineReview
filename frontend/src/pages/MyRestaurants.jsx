@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "../components/common/Navbar";
+import NavBar from "../components/common/NavBar";
 import RestaurantForm from "../components/restaurants/RestaurantForm";
 import MyRestaurantCard from "../components/restaurants/MyRestaurantCard";
 import DeleteRestaurantModal from "../components/restaurants/DeleteRestaurantModal";
@@ -118,7 +118,7 @@ function MyRestaurants() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-100">
-        <Navbar />
+        <NavBar />
 
         <div className="flex min-h-[70vh] items-center justify-center">
           <p className="text-gray-600">Loading your restaurants...</p>
@@ -129,7 +129,7 @@ function MyRestaurants() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <Navbar />
+      <NavBar />
 
       <main className="px-6 py-10">
         <div className="mx-auto max-w-7xl">

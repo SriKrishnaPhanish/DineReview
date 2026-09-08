@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import api from "../services/api";
 import RestaurantCard from "../components/restaurants/RestaurantCard";
 import RestaurantFilters from "../components/restaurants/RestaurantFilters";
-import Navbar from "../components/common/Navbar";
+import NavBar from "../components/common/NavBar";
 
 function Restaurants() {
   // Stores all restaurants currently displayed on the page.
@@ -274,7 +274,7 @@ function Restaurants() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-100">
-        <Navbar />
+        <NavBar />
 
         <div className="flex min-h-[70vh] items-center justify-center">
           <p className="text-gray-600">Loading restaurants...</p>
@@ -285,7 +285,7 @@ function Restaurants() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <Navbar />
+      <NavBar />
 
       <main className="px-6 py-10">
         <div className="mx-auto max-w-7xl">
